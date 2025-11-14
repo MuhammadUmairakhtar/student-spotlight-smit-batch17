@@ -1,0 +1,37 @@
+.navbar{
+ display: flex;
+ justify-content: space-between;
+ color: rgb(244, 241, 241);
+ align-items: center;
+ padding:10px;
+ background-color: rgb(0, 0, 0);
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar ul li{
+    position: relative;
+}
+.navbar ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: green;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+.navbar ul li a:hover::before{
+    width: 100%;
+}
+.hero{
+    display: flex;
+    justify-content: space-around;
+}
